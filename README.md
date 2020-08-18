@@ -1,3 +1,11 @@
+
+You can find this projecct live using following url: 
+                                         https://todo-application-resindu.netlify.app/
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 # ToDoAppAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
