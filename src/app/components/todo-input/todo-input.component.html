@@ -1,0 +1,39 @@
+<div class="main-container">
+    <p class="listTitle">To Do List</p>
+    <div class="headercontainer">
+        <div class="inputbox">
+            <input type="text" class="addtodoinput" [(ngModel)] = 'todoTitle' (keyup.enter)='addTodo()' />
+            <button class="add"  (click)="addTodo()">Add</button>
+            
+    
+
+        </div>
+       
+    </div>
+   
+    <div class="outercontainer">
+        <h3 class="remainingtext">There are {{remainingTodo()}} todos</h3>
+        <hr>
+        <div class="todo-container" *ngFor="let todo of todos">
+            <div class="todo-display">
+                <input type="checkbox" class="checkboxinput" [(ngModel)]="todo.completed" />
+                <div *ngIf="!todo.editing;else editingTodo" class="todotext" [ngClass]="{ 'completed' : todo.completed }" (dblclick)="editTodo(todo)" >{{todo.title}}</div>
+
+                <ng-template #editingTodo>
+                    <input type="text" class="edittexthidden" [(ngModel)]="todo.title"(keyup.enter)="doneEditing(todo)" (keyup.esc)="cancelEditing(todo)" autofocus>
+    
+                </ng-template>
+            </div>
+            <button class="close" (click) = 'removeTodo(todo.id)'>
+                <i class="fa fa-trash fa-2x"></i>    
+            </button>
+        </div>
+        <div class="buttoncontainer">
+            <div *ngIf="atLeastOneCompleted()">
+                <button class="clearcomplete" (click) = "clearcompleted()">clear completed</button>    
+            </div>
+        </div>
+    </div>
+    
+    
+</div>

@@ -1,0 +1,146 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Noto+Sans&family=Roboto:wght@300&display=swap" );
+
+
+.listTitle{
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+    font-size: 50px;
+}
+.headercontainer{
+    display: block;
+    margin : 0 auto;
+    width: 850px;
+}
+.add{
+    display: inline-block;
+    width: 80px;
+    line-height: 44px;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    color: wheat;
+
+    background-color: green;
+    transition-duration: 0.4s;
+
+}
+.add:hover {
+    background-color: #0f4211; /* Green */
+    color: white;   
+    
+}
+.addtodoinput{
+     width: 700px;
+     line-height: 45px;
+     border: none;
+     outline: none;
+     margin-bottom: 70px;
+     padding-left: 50px;
+     font-size: 16px;
+     font-family: 'Noto Sans', sans-serif;
+
+     
+}
+.todo-container{
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+
+}
+.outercontainer{
+    margin : 0 auto;
+    width: 585px;
+    background-color: transparent;
+    vertical-align: middle;
+    line-height: 26px;
+}
+.inputbox{
+    display: inline-block;
+}
+.todo-display{
+    display: inline-block;
+    margin : 0 auto;
+    background-color: #fff;
+    align-items: center;
+    width: 485px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    
+}
+.checkboxinput{
+    display: inline-block;
+}
+.todotext{
+    display: inline-block;
+}
+.close{
+    border-radius: 10px;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    color: orangered;
+    padding: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;  
+    line-height: 26px;
+}
+input[type=checkbox] {
+    border:0px;
+    background: #fff;
+    border: 2px solid green;
+    display: inline-block;
+    transform: scale(2);
+    margin-left: 24px;
+    margin-right: 26px;
+}
+input[type=checkbox]:checked {
+    background-color: green;
+}
+.edittexthidden{
+    padding: 5px;
+    width: 400px;
+    font-size: 18px;
+}
+.completed{
+    text-decoration: line-through;
+    color: grey;
+
+}
+.remainingtext{
+    text-align: right;
+    color: #151B8D	;
+}
+
+hr{ 
+    width:100%;
+     height:6px;
+      background-color:white	;
+       border:none;
+}
+.buttoncontainer{
+    margin-top: 20px;
+}
+.clearcomplete{
+    float: left;
+    background-color: #9ACD32;
+    outline: none;
+    border: 1px solid #9ACD32;
+    width: 250px;
+    line-height: 40px;
+    margin: 20px;
+    font-size: 16px;
+
+}
+.clearcomplete:hover{
+    background-color: #FFFF66	;
+
+}
+

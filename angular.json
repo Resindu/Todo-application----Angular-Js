@@ -24,7 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/font-awesome/css/font-awesome.min.css"  
+
             ],
             "scripts": []
           },
@@ -119,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "to-do-app-angular"
+    }
+  },
+  "defaultProject": "to-do-app-angular",
+  "cli": {
+    "analytics": "ded31e61-14dd-4fc0-812f-3cbb0a976d76"
+  }
 }
